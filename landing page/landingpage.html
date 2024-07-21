@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codesoft -fitness gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="util.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+    <div class="container mx-auto ">
+        <header style="background-color: aliceblue;">
+            <nav class="">
+                <div class="logo text-orange" style="color: rgb(248,147,31);">Codsoft Fitness Gym</div>
+                <ul class="navbar">
+                    <li class="links">Home</li>
+                    <li class="links">About</li>
+                    <li class="links">Services</li>
+                    <li class="links">Contact Us</li>
+                    <li><button class="btn">Join now</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="topleft flex  flex-col justify-center px-2">
+                        <div class="text-center">
+                            <img src="./assets/topleftimg.png" alt="" class="dumbell">  
+                        </div>
+                        <h1 class="my-1 hea text-center">The best gym in country is now in the city</h1>
+                        <p class="text-center">Welcome to Codsoft Fitness Gym! Experience top-quality equipment, expert trainers, and a supportive community. Join us to achieve your fitness goals in the best gym in the city!</p>
+                        <p class="deal text-center">The deal ends in <span id="demo"></span></p>
+                        <div class="buttons">
+                            <button class="btn" style="margin-right: 15px;">Join now</button>
+                            <button class="btn">Contact Us</button>
+                        </div>
+                    </div>
+                    <div class="topright flex justify-center">
+                        <img src="assets/toprightimg.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section2">
+                <h1 class="text-center">Pricing</h1>
+                <p class="my-2 ">Explore our membership options at Codsoft Fitness Gym! Choose from a variety of plans designed to fit your needs and budget. Enjoy access to all facilities, personalized training, and exclusive benefits tailored to help you reach your fitness goals. Our pricing is transparent and designed to offer exceptional value. Find the perfect plan for you today!</p>
+                <div class="boxes flex justify-center">
+                    <div class="box text-center">
+                        <h2>Basic</h2>
+                        <ul>
+                            <li><b class="highlight">₹0</b>/month</li>
+                            <li>Access to gym equipment</li>
+                            <li>Locker room access</li>
+                            <li>Email support</li>
+                            <li>Group fitness classes</li>
+                            <li><button class="btn">Join now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box text-center">
+                        <h2>Premium</h2>
+                        <ul>
+                            <li><b class="highlight">₹1199</b>/month</li>
+                            <li>Access to all gym equipment</li>
+                            <li>Personal training session (1 per month)</li>
+                            <li>Priority email support</li>
+                            <li>Advanced fitness classes</li>
+                            <li><button class="btn">Join now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box text-center">
+                        <h2>Elite</h2>
+                        <ul>
+                            <li><b class="highlight">₹2399</b>/month</li>
+                            <li>Unlimited access to all gym facilities</li>
+                            <li>Unlimited personal training sessions</li>
+                            <li>Phone and email support</li>
+                            <li>VIP lounge access</li>
+                            <li><button class="btn" style="width: 90%;">Join now</button></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+            <hr>
+            <section class="section3">
+                <h1 class="text-center my-2">Compare Membership Plans</h1>
+                <div class="container plantable">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Basic</th>
+                                <th>Premium</th>
+                                <th>Elite</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Access to Gym</th>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Access to Group Classes</th>
+                                <td>-</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Personal Training Sessions</th>
+                                <td>-</td>
+                                <td>1 per month</td>
+                                <td>4 per month</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Spa Access</th>
+                                <td>-</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Guest Passes</th>
+                                <td>-</td>
+                                <td>1 per month</td>
+                                <td>4 per month</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Priority Booking</th>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <hr>
+        </main>
+        <footer>
+            Copyright &copy; Fitness.com | All rights reserved
+        </footer>
+    </div>
+    <script src="time.js"></script>
+</body>
+</html>
