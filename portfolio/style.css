@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+    color: #1d1d1f; /* Apple's dark gray */
+    background-color: #f5f5f7; /* Apple's light gray */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.nav-container, .footer-container {
+    background-color: #fff;
+    width: 100%;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background-color: orange;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 90vw;
+    opacity: 0.85;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    font-size: 1.5rem;
+    color: #f5f5f7;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f7;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #144552; 
+}
+
+/* Hero Section Styles */
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0;
+    align-items: center;
+}
+
+.firstSection > div {
+    width: 35%;
+    margin: 25px 0;
+}
+
+.leftSection {
+    font-size: 3rem;
+}
+
+.purple {
+    color: #ff9505;
+}
+
+.rightSection img {
+    width: 100%;
+}
+
+.leftSection .btn {
+    background-color: #ff9505;
+    border: 2px solid white;
+    color: white;
+    border-radius: 25px;
+    padding: 12px;
+    margin-right: 10px;
+}
+
+.leftSection .btn-2 {
+    color: #ff9505;
+    background-color: white;
+    border: 2px solid #ff9505;
+}
+
+/* Main Styles */
+main hr {
+    border: 0;
+    background: #144552;
+    height: 0.5px;
+    margin: 40px 84px;
+}
+
+/* Experience Section Styles */
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 60px 0;
+    background-color: #f5f5f7;
+}
+
+.secondSection h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.text-grey {
+    color: gray;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.experienceTimeline {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.experienceItem {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 22%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.experienceImage {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.experienceTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experienceDescription {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #212f45;
+    padding: 40px 0;
+    color: #f5f5f7;
+    margin-top: 60px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 80px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff9505;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #f5f5f7;
+}
+
+.footer-column ul li a:hover {
+    color: #ff9505;
+}
+
+.footer-column p {
+    color: #f5f5f7;
+    font-size: 0.9rem;
+}
+
+.footer-rights {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #f5f5f7;
+}

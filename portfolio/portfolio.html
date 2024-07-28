@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizwan's Portfolio Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:wght@700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            color: #212f45;
+            background-color: rgba(240, 239, 238, 0.804);
+            font-family: "Lora", serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <header>
+        <nav id="nav">
+            <div class="left">Rizwan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#body">Home</a></li>
+                    <li><a href="#firstSection">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="firstSection">
+            <div class="leftSection">
+                Hi, I am <span class="purple" style="font-size: 3.5rem;">Rizwan</span>
+                <div>and I am a passionate</div>
+                <span id="element" class="purple"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn btn-2">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="Rizwan">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">What I have done so far?</span>
+            <h1>Work Experience</h1>
+            <div class="experienceTimeline">
+                <div class="experienceItem">
+                    <img src="student.png" alt="School Student" class="experienceImage">
+                    <div class="experienceTitle">School Student (2010 - 2020)</div>
+                    <div class="experienceDescription">
+                        From playful beginnings in kindergarten to the challenges of 10th grade, school students embark on a journey of growth, learning, and discovery. Along the way, they build the foundation for their futures through diverse experiences and essential education.
+                    </div>
+                </div>
+                <div class="experienceItem">
+                    <img src="teen.png" alt="Intermediate Student" class="experienceImage">
+                    <div class="experienceTitle">Intermediate Student (2020 - 2022)</div>
+                    <div class="experienceDescription">
+                        From the fun and games of kindergarten to the challenges of 10th grade, students go on a journey of growth, learning, and discovery. Throughout this time, they lay the groundwork for their futures through a variety of experiences and essential education.
+                    </div>
+                </div>
+                <div class="experienceItem">
+                    <img src="graduated.png" alt="College Student" class="experienceImage">
+                    <div class="experienceTitle">College Student (2022 - 2026)</div>
+                    <div class="experienceDescription">
+                        From kindergarten to graduation, students embark on a journey of growth, learning, and discovery. By the time they graduate, they have built a strong foundation for their futures through diverse experiences and essential education.
+                    </div>
+                </div>
+                <div class="experienceItem">
+                    <img src="developer.png" alt="Developer" class="experienceImage">
+                    <div class="experienceTitle">Developer (2012 - 2022)</div>
+                    <div class="experienceDescription">
+                        From kindergarten to graduation, students embark on a journey of growth, learning, and discovery. By the time they graduate, they have built a strong foundation for their futures through diverse experiences and essential education.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-column">
+                <h3>Rizwan's Developer Portfolio</h3>
+                <p>Building the future, one line of code at a time.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Me</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Address</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">Copyright&copy; www.rizwansportfolio.com | All rights reserved</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Programmer'],
+            typeSpeed: 70,
+        });
+    </script>
+</body>
+
+</html>
