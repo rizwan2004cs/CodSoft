@@ -1,0 +1,89 @@
+body {
+    width: 100%;
+    font-family: "Roboto Slab", serif;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.827);
+}
+
+.row {
+    margin: 4px;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(43, 40, 40);
+}
+#ora{
+    background-color: #ff9f0a;
+}
+
+.button {
+    padding: 20px;
+    margin: 3px 4px;
+    border: 2px solid rgba(0, 0, 0, 0.795);
+    border-radius: 50%;
+    cursor: pointer;
+    color:white;
+    width: 66px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 30px;
+    height: 66px;
+    background-color: #403e3ef2;
+}
+
+.row input {
+    font-size: 55px;
+    padding: 20px;
+    width: 260px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 17px;
+    text-align: end;
+    height: 70px;
+    background-color: #403e3ef2;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center; 
+}
+
+.equal-to {
+    border-radius: 40px;
+    width: 138px; /* Adjust width for two columns */
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.mx-auto {
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: purple;
+}
