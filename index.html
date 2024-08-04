@@ -7,31 +7,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <header id="home">
         <h1>CodSoft Internship Projects</h1>
     </header>
-    <div class="container">
+    <section id="about" class="developer">
+        <a href="https://bio.site/Mohammad_Rizwan"><img src="sin_passport_rizwan-removebg-preview.png" alt="Developer Photo"></a>
+        <div class="developer-content">
+            <h2>Created by Mohammad Rizwan</h2>
+            <p>A passionate web developer with a knack for creating elegant and efficient web solutions. Experienced in a wide range of web technologies and always eager to learn more.</p>
+        </div>
+    </section>
+    <div id="projects" class="container">
+        <h2 class="projects-heading">Projects</h2>
         <a href="landing page/landingpage.html" class="project">
             <img src="landing page/preview_landingpage.png" alt="Fitness Landing Page Preview">
             <div class="project-content">
-                <h2>Fitness Landing Page</h2>
+                <h3>Fitness Landing Page</h3>
                 <p>An engaging and dynamic landing page for a fitness website, designed to motivate and inspire users to achieve their health goals.</p>
             </div>
         </a>
         <a href="portfolio/portfolio.html" class="project">
             <img src="portfolio/preview_portfolio.png" alt="Personal Portfolio Preview">
             <div class="project-content">
-                <h2>Personal Portfolio</h2>
+                <h3>Personal Portfolio</h3>
                 <p>A sleek and modern personal portfolio website to showcase skills, projects, and experiences in a professional manner.</p>
             </div>
         </a>
         <a href="calculator/index.html" class="project">
             <img src="calculator/preview_calculator.png" alt="Calculator App Preview">
             <div class="project-content">
-                <h2>Calculator App</h2>
+                <h3>Calculator App</h3>
                 <p>An intuitive and user-friendly calculator app with a dark mode color scheme, inspired by the iOS calculator design.</p>
             </div>
         </a>
     </div>
+    <footer>
+        <p>Connect with me on:</p>
+        <ul class="social-media">
+            <li><a href="https://github.com/rizwan2004cs" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/mohammad-rizwan-cs" target="_blank">LinkedIn</a></li>
+            <a href="https://wa.link/0b3afy">Whatsapp</a>
+            <li><a href="https://www.instagram.com/rizwan_2004_mohammad" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
