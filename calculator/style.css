@@ -1,95 +1,117 @@
-body {
-    width: 100%;
-    /* font-family: "Roboto Slab", serif; */
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(135deg, #e0f7fa, #80deea);
-        color: #333;
-        animation: fadeIn 1.5s ease-in-out;
-}
-.container{
-    background-color: rgba(0, 0, 0, 0.827);
+:root {
+    --primary-color: #006064;
+    --secondary-color: #00BCD4;
+    --bg-color: #F5F7FA;
+    --text-color: #333333;
+    --white: #FFFFFF;
+    --shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    --calculator-bg: #222;
+    --btn-bg: #333;
+    --btn-text: #fff;
+    --operator-bg: #ff9f0a;
 }
 
-.row {
-    margin: 4px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    background-image: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 .container {
-    border: 2px solid black;
-    border-radius: 20px;
-    width: fit-content;
-    padding: 10px;
-    background-color: rgb(43, 40, 40);
+    background-color: var(--calculator-bg);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    width: 350px;
 }
-#ora{
-    background-color: #ff9f0a;
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.display-row {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    color: var(--white);
+    border: none;
+    border-radius: 15px;
+    font-size: 3rem;
+    text-align: right;
+    padding: 0 20px;
+    font-family: 'Inter', sans-serif;
 }
 
 .button {
-    padding: 20px;
-    margin: 3px 4px;
-    border: 2px solid rgba(0, 0, 0, 0.795);
-    border-radius: 50%;
-    cursor: pointer;
-    color:white;
-    width: 66px;
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-    padding-bottom: 30px;
-    height: 66px;
-    background-color: #403e3ef2;
-}
-
-.row input {
-    font-size: 55px;
-    padding: 20px;
-    width: 260px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    border: 2px solid black;
-    border-radius: 17px;
-    text-align: end;
+    width: 70px;
     height: 70px;
-    background-color: #403e3ef2;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: filter 0.2s ease;
     display: flex;
-    align-items: center;
-    color: white;
-    justify-content: center; 
-}
-
-.equal-to {
-    border-radius: 40px;
-    width: 138px; /* Adjust width for two columns */
-}
-
-.text-center {
-    text-align: center;
-}
-
-
-.mx-auto {
-    margin: auto;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-col {
-    flex-direction: column;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.justify-center {
     justify-content: center;
+    align-items: center;
 }
 
 .button:hover {
-    background-color: purple;
+    filter: brightness(1.2);
+}
+
+.button:active {
+    filter: brightness(0.9);
+}
+
+.action {
+    background-color: #a5a5a5;
+    color: #000;
+}
+
+.operator {
+    background-color: var(--operator-bg);
+    color: #fff;
+}
+
+/* Specific iOS style overrides for the last row */
+.row:last-child {
+    justify-content: flex-start;
+}
+
+/* The Zero button (first in last row) should be wide */
+.row:last-child .button:first-child {
+    width: 150px;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 25px;
+    justify-content: flex-start;
 }
