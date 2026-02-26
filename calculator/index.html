@@ -11,36 +11,36 @@
     <h1 class="text-center">Simple Calculator</h1>
     <div class="container flex flex-col mx-auto align-center justify-center">
         <div class="row">
-            <input type="text">
+            <input type="text" aria-label="Calculation result" readonly>
         </div>
         <div class="row">
-            <button class="button">C</button>
-            <button class="button">%</button>
-            <button class="button">-</button>
-            <button class="button" id="ora" style="padding-right: 5px;">AC  </button>
+            <button class="button" aria-label="Clear">C</button>
+            <button class="button" aria-label="Percentage">%</button>
+            <button class="button" aria-label="Subtract">-</button>
+            <button class="button operator" aria-label="All Clear">AC</button>
         </div>
         <div class="row">
             <button class="button">7</button>
             <button class="button">8</button>
             <button class="button">9</button>
-            <button class="button " id="ora">*</button>
+            <button class="button operator" aria-label="Multiply">*</button>
         </div>
         <div class="row">
             <button class="button">4</button>
             <button class="button">5</button>
             <button class="button">6</button>
-            <button class="button " id="ora">/</button>
+            <button class="button operator" aria-label="Divide">/</button>
         </div>
         <div class="row">
             <button class="button">1</button>
             <button class="button">2</button>
             <button class="button">3</button>
-            <button class="button " id="ora">+</button>
+            <button class="button operator" aria-label="Add">+</button>
         </div>
         <div class="row">
             <button class="button">0</button>
-            <button class="button">.</button>
-            <button class="button equal-to " id="ora" colspan="2">=</button>
+            <button class="button" aria-label="Decimal point">.</button>
+            <button class="button equal-to operator" colspan="2" aria-label="Equals">=</button>
     
         </div>
     </div>
