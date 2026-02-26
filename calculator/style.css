@@ -23,7 +23,7 @@ body {
     padding: 10px;
     background-color: rgb(43, 40, 40);
 }
-#ora{
+.operator {
     background-color: #ff9f0a;
 }
 
@@ -41,6 +41,18 @@ body {
     padding-bottom: 30px;
     height: 66px;
     background-color: #403e3ef2;
+    transition: background-color 0.15s ease, transform 0.05s ease;
+    outline: none; /* Removed default outline for custom focus */
+}
+
+.button:focus-visible {
+    box-shadow: 0 0 0 3px #80deea, 0 0 0 5px rgba(0, 0, 0, 0.827);
+    z-index: 1;
+}
+
+.button:active {
+    transform: scale(0.95);
+    filter: brightness(1.2);
 }
 
 .row input {
@@ -91,5 +103,10 @@ body {
 }
 
 .button:hover {
-    background-color: purple;
+    filter: brightness(1.2); /* Replaces purple background with brightness */
+}
+
+/* Specific hover for operators */
+.operator:hover {
+    background-color: #ffb340; /* Lighter orange */
 }
