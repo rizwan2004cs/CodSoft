@@ -93,3 +93,8 @@ body {
 .button:hover {
     background-color: purple;
 }
+
+.button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 2px;
+}

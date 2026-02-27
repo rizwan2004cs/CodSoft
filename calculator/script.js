@@ -94,3 +94,33 @@ Array.from(buttons).forEach((button) => {
     input.value = string;
   });
 });
+
+// Add keyboard support
+document.addEventListener('keydown', (e) => {
+  const key = e.key;
+  const buttonMap = {
+    'Enter': '=',
+    'Escape': 'AC',
+    'Backspace': 'C',
+    '/': '/',
+    '*': '*',
+    '-': '-',
+    '+': '+',
+    '.': '.',
+    '%': '%',
+  };
+
+  let targetValue = buttonMap[key] || key;
+
+  // Handle numeric keys 0-9
+  if (!isNaN(key) && key !== ' ') {
+    targetValue = key;
+  }
+
+  // Find and click the button
+  const button = Array.from(buttons).find(btn => btn.innerText.trim() === targetValue);
+  if (button) {
+    button.click();
+    button.focus(); // Visual feedback
+  }
+});
