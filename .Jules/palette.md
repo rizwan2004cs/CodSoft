@@ -1,0 +1,3 @@
+## 2024-05-18 - Input fields as display elements
+**Learning:** When using an `<input type="text">` to display data without intending for direct keyboard entry (like in a calculator display), failing to mark it `readonly` causes virtual keyboards to pop up unexpectedly on mobile devices. Additionally, an I-beam cursor and default styling may suggest the field is typable when it's not.
+**Action:** Always ensure input fields that act purely as displays have `readonly`, `cursor: default`, appropriate ARIA labels, and explicit focus visible styles to distinguish them from standard inputs while maintaining accessibility.

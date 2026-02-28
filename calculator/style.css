@@ -58,6 +58,17 @@ body {
     align-items: center;
     color: white;
     justify-content: center; 
+    cursor: default;
+    outline: none;
+}
+
+.row input:focus-visible {
+    box-shadow: 0 0 0 3px #ff9f0a;
+}
+
+.button:focus-visible {
+    outline: 3px solid #ff9f0a;
+    outline-offset: 2px;
 }
 
 .equal-to {
