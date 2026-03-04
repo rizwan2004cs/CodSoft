@@ -1,0 +1,3 @@
+## 2024-05-18 - Custom Calculator Input UX Learning
+**Learning:** For custom calculators that maintain state via JS and button clicks, standard `<input>` fields can be problematic. They might trigger mobile keyboards unnecessarily, disrupting the UX.
+**Action:** Use `readonly` on the `<input>` element to prevent mobile keyboard popups. Ensure an `aria-label="Calculator display"` is added so screen readers understand the purpose of the input, maintaining accessibility without sacrificing UX.
