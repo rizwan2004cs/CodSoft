@@ -1,0 +1,5 @@
+## 2024-05-24 - Calculator Mobile UX & A11y
+
+**Learning:** When building calculator interfaces or custom virtual keyboards that rely on a standard `<input type="text">` for display, mobile devices will natively pop up the system keyboard when the input receives focus. This creates a confusing and broken UX, as the user is meant to use the on-screen calculator buttons. Additionally, relying solely on visual context for the input field leaves screen reader users without context on what the input represents.
+
+**Action:** Always use the `readonly` attribute on input fields that are meant to be updated via custom UI buttons rather than direct keyboard entry to prevent mobile keyboard popups while maintaining state synchronization. Furthermore, ensure such inputs have an appropriate `aria-label` (e.g., `aria-label="Calculator display"`) to explicitly describe their purpose to assistive technologies.
