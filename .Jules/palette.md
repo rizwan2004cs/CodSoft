@@ -1,0 +1,3 @@
+## 2024-03-06 - Prevent Mobile Keyboard on Calculator
+**Learning:** Virtual keyboard popping up on mobile devices when focusing on custom calculator display inputs ruins the user experience since all interactions are handled by on-screen buttons. A `readonly` attribute elegantly solves this while still allowing programmatic value updates. Adding an `aria-label` ensures screen readers understand the input's purpose despite it being readonly.
+**Action:** When building custom virtual keypads or calculators, always use `readonly` on the display `<input>` to block native mobile keyboards, and pair it with an `aria-label` for context.
