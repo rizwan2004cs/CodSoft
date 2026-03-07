@@ -1,0 +1,3 @@
+## 2024-05-24 - Custom Keypad Input Desync
+**Learning:** For custom keypads (like calculators or phone dialers) where JavaScript strictly controls the state based on button clicks, allowing manual keyboard input in the display field causes a severe de-synchronization between the UI state and the actual JavaScript state.
+**Action:** Always add the `readonly` attribute to display fields that are updated via custom keypads to prevent manual user input and enforce state synchronization. Adding an `aria-label` ensures screen readers can still announce the current display value properly, and the `readonly` state also prevents mobile keyboards from unnecessarily popping up and obscuring the custom keypad.
