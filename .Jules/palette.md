@@ -1,0 +1,3 @@
+## 2024-05-15 - Prevent Mobile Keyboard on Custom Keypad Displays
+**Learning:** When building interfaces with custom keypads (like calculators, PIN pads), using a standard `<input type="text">` causes the native mobile keyboard to popup when focused, which creates a frustrating dual-keyboard experience and pushes content out of view.
+**Action:** Always add `readonly` to input fields that are meant to be updated exclusively via custom on-screen buttons. Combine this with an `aria-label` (e.g., `aria-label="Calculator display"`) so screen readers still understand the purpose of the field.
