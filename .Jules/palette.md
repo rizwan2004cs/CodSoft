@@ -1,0 +1,3 @@
+## 2024-05-24 - JS-Driven Calculator Input State Synchronization
+**Learning:** For interactive calculators built primarily with JavaScript state and button click events, allowing direct keyboard input on the display `<input>` breaks state synchronization because the underlying script ignores manual inputs. Furthermore, active inputs trigger mobile keyboards which negatively affects UX on mobile devices.
+**Action:** Always apply the `readonly` attribute to the display inputs of JS-driven calculators to prevent mobile keyboards from popping up and users from manually overriding state. Accompany this with an appropriate `aria-label` for screen reader accessibility to maintain functionality without breaking synchronization.
