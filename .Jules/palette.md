@@ -1,0 +1,7 @@
+## 2024-05-24 - Calculator Accessibility and Mobile UX
+**Learning:** In a pure-JS web calculator, the display input field naturally triggers mobile keyboards if tapped, which breaks the calculator UX. Adding `readonly` prevents this while still allowing JS to update the value. Additionally, a pure display input needs an `aria-label` (e.g., "Calculator display") since it lacks a visible label.
+**Action:** When building custom web-based input interfaces (like calculators or custom keypads), always apply `readonly` to the display input to suppress native mobile keyboards, and ensure it has an appropriate `aria-label` for screen readers.
+
+## 2024-05-24 - Semantic HTML in External Links
+**Learning:** External links opening in new tabs (`target="_blank"`) often miss `rel="noopener noreferrer"`, which is a security and performance best practice. Also, social links in footers are frequently implemented as naked `<a>` tags inside `<ul>` lists, breaking list semantics.
+**Action:** Always verify that `target="_blank"` links include `rel="noopener noreferrer"`. Ensure all items within a `<ul>` or `<ol>` are properly wrapped in `<li>` tags, especially in repetitive structures like footer social links.
