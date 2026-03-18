@@ -1,0 +1,3 @@
+## 2024-05-14 - Prevent Mobile Keyboard Popup on Calculator Input
+**Learning:** JS-controlled input fields on mobile trigger the native keyboard on focus, causing jarring layout shifts when the app relies solely on its own custom UI buttons. Using `readonly` prevents the keyboard from popping up, but screen readers still need context.
+**Action:** When a custom input interface (like a calculator) fully controls the state via UI buttons, apply the `readonly` attribute to the HTML input to prevent the mobile keyboard popup, and always include an `aria-label` so it remains accessible to screen readers.
