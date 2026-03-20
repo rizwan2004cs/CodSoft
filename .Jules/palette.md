@@ -1,0 +1,3 @@
+## 2024-05-24 - Custom Keypad Input Accessibility
+**Learning:** When creating a custom calculator or keypad interface where state is maintained entirely via JS and button clicks, leaving the input field editable causes the native mobile keyboard to pop up unnecessarily, disrupting the user experience.
+**Action:** Always add the `readonly` attribute to custom keypad inputs, and use an `aria-label` to maintain state synchronization, improve accessibility, and prevent mobile keyboard popups.
