@@ -1,0 +1,3 @@
+## 2024-05-18 - Readonly Calculator Display
+**Learning:** For a calculator that uses custom buttons and JavaScript state exclusively, the input display element should be set to `readonly` and include an `aria-label="Calculator display"`. If it's not readonly, mobile devices trigger the system keyboard, which disrupts the custom interface and negatively impacts UX. The aria label ensures screen readers know what the specific input field represents.
+**Action:** When implementing custom interactive tools (like calculators, custom keypads, etc.), always verify that associated text input displays are `readonly` and properly labeled via `aria-label` to prevent system keyboard interruption and ensure clear screen reader announcements.
