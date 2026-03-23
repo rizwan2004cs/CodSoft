@@ -1,0 +1,3 @@
+## 2024-08-01 - Prevent Native Keyboard & Add ARIA Label on Custom Calculator Displays
+**Learning:** For application UIs that use an HTML `<input type="text">` to display calculations but provide their own on-screen keyboard (e.g., a calculator app), the native mobile OS keyboard will still pop up unexpectedly if the user taps the input. Additionally, without an explicit ARIA label, screen readers simply read "edit text," providing zero context about its purpose in the app.
+**Action:** Always add the `readonly` attribute to input fields that act purely as displays synchronized with custom on-screen buttons, to block native keyboards. Simultaneously, add a descriptive `aria-label` (e.g., "Calculator Display") so screen readers can properly describe the field's purpose.
