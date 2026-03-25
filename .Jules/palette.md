@@ -1,0 +1,3 @@
+## 2024-05-14 - Prevent Mobile Keyboard on Virtual Inputs
+**Learning:** For custom simulated inputs (like a calculator display) that are populated via JavaScript buttons rather than physical typing, mobile devices will confusingly pop up their native virtual keyboard if the input is focusable and editable. Screen reader users also lack context on what the input represents since it lacks an associated visible label.
+**Action:** Always add the `readonly` attribute to such text inputs to prevent the native mobile keyboard from appearing while still allowing JS updates. Simultaneously, add a descriptive `aria-label` (e.g., "Calculator display") so screen readers can properly announce its purpose.
