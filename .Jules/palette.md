@@ -1,0 +1,3 @@
+## 2024-05-24 - Calculator Mobile UX Intrusion
+**Learning:** Custom calculators built with `<input type="text">` for the display trigger the native mobile keyboard when tapped, leading to a confusing and interrupted user experience since input is handled via custom buttons.
+**Action:** Always add the `readonly` attribute to input fields used strictly as displays for custom keyboards/calculators to prevent mobile keyboard popups. Pair with `aria-label` to ensure context is still provided to screen readers.
