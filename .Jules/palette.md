@@ -1,0 +1,3 @@
+## 2024-05-24 - Calculator Display Readonly State
+**Learning:** Adding the `readonly` attribute to an `<input>` element used purely as a state-driven display (like a calculator screen) prevents the virtual keyboard from popping up on mobile devices when users tap it. Coupling this with `aria-label` ensures the display remains fully accessible to screen readers, preventing an accessibility regression while fixing a major UX annoyance on mobile.
+**Action:** For purely state-driven text inputs that act as visual displays, always apply `readonly` and an appropriate `aria-label` to prevent unwanted mobile keyboard popups without breaking accessibility.
