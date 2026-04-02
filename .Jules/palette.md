@@ -1,0 +1,3 @@
+## 2025-01-20 - Custom Keypad-Driven Inputs UX
+**Learning:** When creating a custom calculator keypad or similar interface that drives an input field via JavaScript, leaving the input as editable allows mobile keyboards to pop up unnecessarily when the field is tapped, creating a frustrating experience. It also typically lacks proper context for screen readers.
+**Action:** Always add the `readonly` attribute to input fields that are strictly populated by custom on-screen keypads. Add a clear `aria-label` to these input fields to explain their purpose (e.g., "Calculator display") to assistive technologies.
