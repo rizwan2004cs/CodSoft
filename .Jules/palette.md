@@ -1,0 +1,3 @@
+## 2024-05-24 - Calculator Display Readonly State
+**Learning:** Custom interactive display fields (like calculator screens) that are built with `<input type="text">` elements trigger the native on-screen keyboard on mobile devices when tapped. This severely disrupts the user experience by obscuring the custom UI buttons meant for input.
+**Action:** Always add the `readonly` attribute to custom UI displays built with inputs, accompanied by an `aria-label` to provide context for screen readers since the input is visually interactive but not directly typable.
