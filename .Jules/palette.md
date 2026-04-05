@@ -1,0 +1,3 @@
+## 2024-05-24 - Calculator Input Accessibility
+**Learning:** For calculator inputs or similar components where state is maintained entirely via JavaScript and button clicks, the input field should be `readonly` to prevent native mobile keyboard popups which ruin the UX. Additionally, an `aria-label` is crucial because the visual layout implies its function, but a screen reader might just announce "edit text".
+**Action:** When reviewing calculator or custom virtual keypad designs, always ensure the display output element has `readonly` if typing isn't expected, and provide an explicit `aria-label`.
