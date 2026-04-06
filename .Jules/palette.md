@@ -1,0 +1,3 @@
+## 2025-01-20 - Calculator Input Accessibility & UX
+**Learning:** Text input fields in calculator interfaces often trigger mobile keyboards when focused, creating a disruptive user experience since the calculator already provides its own custom keypad. Additionally, lacking an explicit label for a standalone input field reduces screen reader accessibility.
+**Action:** Apply `readonly` attribute to prevent native mobile keyboard popup while preserving JavaScript update capability, and add an `aria-label="Calculator display"` to properly announce the input's purpose to screen reader users.
