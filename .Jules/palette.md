@@ -1,0 +1,3 @@
+## 2024-04-07 - Calculator Input Accessibility & Usability
+**Learning:** For custom web-based calculators where all input is handled via on-screen buttons, standard text inputs present usability and accessibility challenges. On mobile devices, focusing on the input field triggers the virtual keyboard, which obscures the on-screen calculator buttons. Additionally, screen readers need to understand the purpose of the input field.
+**Action:** When building calculators or similar components with custom on-screen keypads, always add the `readonly` attribute to the input field to prevent mobile keyboard popups, and add a descriptive `aria-label` (e.g., `aria-label="Calculator display"`) to clearly communicate its purpose to assistive technologies.
