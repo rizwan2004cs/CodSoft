@@ -8,6 +8,7 @@ body {
     animation: fadeIn 1.5s ease-in-out;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -34,6 +35,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .row input {
@@ -116,16 +118,28 @@ body {
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .container {
-        width: 90vw;
+        width: 95vw;
         padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .row {
+        gap: 8px;
     }
 
     .button {
         width: 60px;
         height: 60px;
         font-size: 24px;
+        flex: 1; /* Allow buttons to grow/shrink slightly */
+        max-width: 22%; /* Ensure 4 fit in a row */
+    }
+
+    .equal-to {
+        max-width: 48%; /* Ensure it spans two columns */
+        flex-grow: 1;
     }
 
     .row input {

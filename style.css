@@ -221,23 +221,47 @@ footer a:hover {
     .container {
         flex-direction: column;
         align-items: center;
+        padding: 20px;
     }
 
     .project {
-        width: 80%;
+        width: 90%;
         margin-bottom: 20px;
+        box-sizing: border-box;
     }
 
     .developer {
         flex-direction: column;
+        padding: 20px;
+        margin: 20px 10px;
     }
 
     .developer img {
         margin-bottom: 20px;
         margin-right: 0;
+        width: 120px; /* Scale down slightly on mobile */
+        height: auto;
     }
 
     .developer-content {
         text-align: center;
+    }
+
+    .navbar {
+        position: relative; /* Un-fix on mobile to prevent overlap */
+        padding: 15px;
+        border-radius: 15px;
+        margin: 10px;
+        width: auto;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header {
+        margin-top: 20px; /* Reset margin since nav is no longer fixed */
+        padding: 40px 20px;
     }
 }

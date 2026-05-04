@@ -307,19 +307,31 @@ footer {
     .topleft, .topright {
         width: 100%;
         margin-bottom: 30px;
+        box-sizing: border-box;
     }
 
     .buttons {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     nav {
         flex-direction: column;
         padding: 15px;
+        position: relative; /* Remove fixed to prevent overlap on mobile */
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 20px;
+    }
+
+    main {
+        margin-top: 20px; /* Adjust offset since nav is no longer fixed */
     }
 
     .logo {
         margin-bottom: 15px;
+        text-align: center;
     }
 
     .section2 p {
@@ -331,14 +343,18 @@ footer {
     .navbar ul {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
 
     .navbar li {
         margin: 5px 0;
+        width: 100%;
+        text-align: center;
     }
 
     nav .btn {
         margin-top: 10px;
+        width: 80%; /* Ensure button doesn't overflow */
     }
 
     .section3 table {
@@ -348,5 +364,10 @@ footer {
 
     .box {
         min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .topleft {
+        padding: 20px; /* Reduce padding to prevent overflow */
     }
 }
