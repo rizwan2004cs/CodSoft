@@ -1,3 +1,6 @@
 ## 2024-05-18 - Calculator Input Display Accessibility
 **Learning:** Input fields (`<input type="text">`) used strictly as state displays for custom interactive components (like calculators) trigger unwanted mobile keyboard popups and confuse screen readers since they appear editable but are meant to be manipulated via separate on-screen buttons.
 **Action:** Always add the `readonly` attribute and an appropriate `aria-label` (e.g., "Calculation result") to input fields used as pure displays in order to improve accessibility, maintain state synchronization, and prevent mobile keyboard interference.
+## 2024-05-24 - Timeline Illustrations Redundant Screen Reader Announcements
+**Learning:** Timeline illustrations (like icons or generic graphics for a student or developer) that are immediately followed by descriptive text (e.g., `<div class="experienceTitle">School Student</div>`) cause repetitive screen reader announcements if their `alt` text duplicates that content.
+**Action:** Always treat these timeline illustrations as purely decorative by setting `alt=""` and `aria-hidden="true"` on the `<img>` elements. This streamlines the auditory experience by relying on the adjacent semantic text for context instead.
